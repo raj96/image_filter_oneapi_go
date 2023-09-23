@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gophers X Intel oneAPI</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <nav class="navbar black">
+        <img src="assets/logo.png" alt="logo" style="height: 100%;" />
+    </nav>
+
+
+    <div class="row">
+        <canvas id="original-image"></canvas>
+    </div>
+    <div class="row center">
+        <button id="grayscale" class="btn grey">Grayscale</button>
+        <button id="gaussian" class="btn orange">Gaussian Blur</button>
+    </div>
+    <input class="hide" id="image-load-button" type="file" accept="image/*" />
+
+    <div class="result">
+        <canvas id="oneapi-result-canvas"></canvas>
+    </div>
+
+
+    <div id="loader" class="hide">
+        <div class="loader-anim-container">
+            <img src="assets/gopher_working.gif" alt="Gopher Working Animation">
+            <h6>Gopher is working hard...</h6>
+            <h6>Cheer for the Gopher</h6>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    text-align: center;
+}
+
+.image-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#original-image {
+    border: 1px solid black;
+    width: 100vw;
+}
+#oneapi-result-canvas {
+    border: 1px solid black;
+    width: 100vw;
+}
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.2);
+    top:0;
+    left:0;
+}
+
+.loader-anim-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 2em;
+    padding: 2px 15px;
+}
+
+.loader-anim-container > h6 {
+    font-weight: 700;
+
+}
